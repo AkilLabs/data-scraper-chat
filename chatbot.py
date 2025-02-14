@@ -10,8 +10,8 @@ from tenacity import retry, stop_after_attempt, wait_exponential
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Load API keys (Replace with your actual keys)
-SERPER_API_KEY = os.getenv("SERPER_API_KEY", "60e5bc1fb870e3f7a81beb738fe358f8d88f14f9")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyB30L8LsiJF0l0H9JT4zaRGs_-jjdL2p2s")
+SERPER_API_KEY = os.getenv("SERPER_API_KEY", "api")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "api")
 
 # Validate API keys are present
 if not SERPER_API_KEY or not GEMINI_API_KEY:
