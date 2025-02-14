@@ -12,9 +12,9 @@ from tenacity import retry, stop_after_attempt, wait_exponential
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # API Keys
-SERPER_API_KEY = os.getenv("SERPER_API_KEY", "60e5bc1fb870e3f7a81beb738fe358f8d88f14f9")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyB30L8LsiJF0l0H9JT4zaRGs_-jjdL2p2s")
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "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")
+SERPER_API_KEY = os.getenv("SERPER_API_KEY", "api")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "api")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "api")
 
 # Configure Gemini AI
 genai.configure(api_key=GEMINI_API_KEY)
